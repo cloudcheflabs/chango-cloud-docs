@@ -29,7 +29,7 @@ You need to create iceberg table beforehand. See [here](cli.md#create-iceberg-ta
 
 You may construct chango client instance like this.
 
-```
+```java
 import co.cloudcheflabs.chango.client.component.ChangoClient;
 
 ...
