@@ -1,0 +1,73 @@
+site_name: Chango Cloud
+site_url: https://cloudcheflabs.github.io/chango-cloud-docs
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - header.autohide
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: blue
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: blue
+      accent: lime
+  logo: images/chango-logo.png
+
+
+nav:
+  - "Getting Started":
+      - "Introduction": intro/intro.md
+      - "Getting Started": intro/getting-started.md
+  - "Features":
+      - "Chango Cloud Streaming": features/streaming.md
+      - "Chango Cloud Data Ingestion": features/ingestion.md
+      - "Chango Cloud Trino Gateway": features/trino-gw.md
+  - "Data Ingestion":
+      - "Chango Client CLI": ingestion/cli.md
+      - "Chango Client Streaming Library": ingestion/streaming.md
+
+
+extra:
+  generator: false
+  version:
+    provider: mike
+    default: 1.6.0
+
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+copyright: |
+  © <script>document.write(new Date().getFullYear())</script> Cloud Chef Labs Inc. All rights reserved.
+                825-86-01950 Nonhyeonro 509, C707, Gangnamgu, Seoul 06132, South Korea.
